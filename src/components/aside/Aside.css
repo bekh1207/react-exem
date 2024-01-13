@@ -1,0 +1,48 @@
+aside{
+    width: 250px;
+    background-color: #03045e;
+    height: 100vh;
+}
+
+.all-cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.add-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-price > *{
+    width: 200px;
+    border-radius: 5px;
+}
+
+.add-price input{
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 0;
+}
+
+.add-price button{
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    border: 1px solid royalblue;
+}
+
+.cost-sum{
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+}
