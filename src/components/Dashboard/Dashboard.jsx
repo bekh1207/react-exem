@@ -19,7 +19,7 @@ function Dashboard() {
       setHistory([...history, newProd])
     }
     else{
-      alert('mavlog yetarli emas')
+      alert('mablag yetarli emas')
       return
     }
     

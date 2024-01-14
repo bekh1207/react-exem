@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { RiLoginCircleLine } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
 import "./Login.css"
+import { Context } from '../../App';
 
 function Login() {
+    const {setLogin} = useContext(Context)
     const navigate = useNavigate()
     const loginHandler = e => {
         e.preventDefault()
@@ -11,6 +13,7 @@ function Login() {
         const { tel, password } = Object.fromEntries(form.entries())
         if (tel == '+9' && password == '1') {
             navigate('/')
+            setLogin(true)
         }
         else {
             alert('parol yoki tel xato')

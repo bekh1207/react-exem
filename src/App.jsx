@@ -10,10 +10,11 @@ function App() {
 
 const [cost, setCost] = useState(0)
 const [history,setHistory] = useState([])
+const [login,setLogin] = useState(false)
 
 
   return (
-    <Context.Provider value={{cost, setCost, history, setHistory}}>
+    <Context.Provider value={{cost, setCost, history, setHistory, login, setLogin}}>
       <Routes>
         <Route element={<ProtecttedRoute />}>
           <Route path={'/'} element={<Home />} />
